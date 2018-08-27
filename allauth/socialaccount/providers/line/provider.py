@@ -20,7 +20,7 @@ class LineProvider(OAuth2Provider):
         return []
 
     def extract_uid(self, data):
-        return str(data['mid'])
+        return str(data['userId'])
 
 
 provider_classes = [LineProvider]
